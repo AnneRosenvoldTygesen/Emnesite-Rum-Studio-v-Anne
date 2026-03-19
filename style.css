@@ -1,0 +1,492 @@
+/*************** Reset - må ikke ændres *********************/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+main {
+  max-width: 1200px;
+  margin-inline: auto;
+  padding: 0 0rem;
+}
+
+/*****fonts GENERAL******/
+.content {
+  font-family: "Helvetica Neue", sans-serif;
+  font-family: "Playfair Display", serif;
+}
+
+a {
+  text-decoration: none;
+  color: #5a1b22;
+}
+
+/*****font sizes MOBIL****/
+
+h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 30px;
+}
+
+h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 25px;
+}
+
+h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 20px;
+}
+
+p {
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 12px;
+}
+
+/*****farver GENERAL******/
+.color1 {
+  color: #5a1b22;
+}
+.color2 {
+  color: #fffbf0;
+}
+.color3 {
+  color: #d1c362;
+}
+.color4 {
+  color: #0a7be4;
+}
+
+/**** burgermenu GENERAL****/
+header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 15px;
+  padding-block: 10px;
+  background-color: #5a1b22;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  z-index: 9999;
+}
+
+#logo-container {
+  width: auto;
+  /* width: 20%; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logorum {
+  width: 75px;
+  height: auto;
+  /* aspect-ratio: 236 / 176; */
+}
+
+.instaikon {
+  width: 22px;
+}
+
+.burgerlogo {
+  width: 15px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+.menu {
+  display: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  margin-right: 20px;
+}
+
+.menu li:last-child {
+  margin-right: 0;
+}
+
+.menu a {
+  display: block;
+  padding: 5px;
+  color: #fffbf0;
+  text-decoration: none;
+  transition: color 0.3s;
+  text-align: end;
+}
+
+/* .menu a:hover {
+  color: #ff0000;
+} */
+
+.burger {
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: block;
+  background-color: transparent;
+  border: 0;
+}
+
+nav.active .menu {
+  display: block;
+  background-color: #5a1b22;
+  position: absolute;
+  top: 90px;
+  left: 0;
+  width: 50%;
+  height: 200px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+nav.active .menu li {
+  margin: 10px 20px;
+  background-color: transparent;
+}
+
+nav.active .menu a {
+  font-size: 12px;
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+/******general styling***/
+
+main {
+  background-color: #fffbf0;
+  padding-bottom: 100px;
+}
+
+/******styling af footer GENERAL***/
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #5a1b22;
+  padding-inline: 20px;
+  padding-block: 20px;
+
+  align-items: start;
+}
+
+.kontaktp {
+  font-family: "Helvetica Neue", sans-serif;
+  padding-top: 20px;
+}
+.kontaktfooter {
+  color: #fffbf0;
+  font-family: "Helvetica Neue", sans-serif;
+  max-width: 400px;
+  justify-self: start;
+  padding-top: 25px;
+}
+.logofooter {
+  grid-column: 2;
+  justify-self: end;
+  width: 80px;
+  height: auto;
+}
+
+.ikonersome {
+  grid-column: 2;
+  justify-self: end;
+  align-self: end;
+  display: flex;
+  gap: 20px;
+}
+
+.rumstudiosite {
+  color: #fffbf0;
+  text-decoration: none;
+}
+
+/*****MOBILSITE*****/
+
+/******forside styling MOBIL****/
+@media (max-width: 754px) {
+  main {
+    background-color: #fffbf0;
+  }
+
+  .ctabutton1 {
+    font-family: "Playfair Display", serif;
+    color: #fffbf0;
+  }
+
+  .ctabutton2 {
+    font-family: "Playfair Display", serif;
+    color: #fffbf0;
+  }
+
+  /*****Overskrift ønsker indretning MOBIL***/
+
+  .h2top {
+    color: #5a1b22;
+  }
+
+  /****grid mosaik intro MOBIL****/
+
+  .grid_mosaikintro {
+    background-color: #5a1b22;
+  }
+
+  .introh1 {
+    color: #fffbf0;
+  }
+
+  .introh2 {
+    color: #fffbf0;
+  }
+
+  .introh2a {
+    color: #fffbf0;
+  }
+
+  .intropa {
+    color: #fffbf0;
+  }
+
+  .introh2b {
+    color: #fffbf0;
+  }
+
+  .intropb {
+    color: #fffbf0;
+  }
+
+  .reolframe {
+    background-color: #d1c362;
+    padding: 10px;
+  }
+
+  /*****3 store tekstlinjer MOBIL***/
+
+  .tekstlinjer {
+    font-family: "Playfair Display", serif;
+    color: #5a1b22;
+    font-size: 16px;
+  }
+
+  /*****instadel MOBIL****/
+
+  .instadel {
+    background-color: #d1c362;
+  }
+
+  .instaknap {
+    font-family: "Helvetica Neue", sans-serif;
+    color: #5a1b22;
+    /* font-style: none; */
+  }
+
+  /*******PROJEKT BADEVAER MOBILSITE******/
+  .h1badevaer {
+    color: #5a1b22;
+  }
+
+  .galleribadevaer {
+    background-color: #5a1b22;
+  }
+
+  .h2galleri {
+    color: #fffbf0;
+  }
+
+  .frameimg3 {
+    background-color: #d1c362;
+    padding: 10px;
+  }
+
+  .ctabookservice {
+    color: #0a7be4;
+    text-decoration: none;
+  }
+
+  /********BOOK SERVICE MOBIL*****/
+  .h1book {
+    color: #5a1b22;
+  }
+
+  .udfyldbokse {
+    background-color: #5a1b22;
+    font-family: "Helvetica Neue", sans-serif;
+    color: #fffbf0;
+    font-size: 12px;
+  }
+  .h3udfylder {
+    font-family: "Playfair Display", serif;
+    font-size: 15px;
+  }
+}
+
+/******DESKTOP****/
+@media (min-width: 755px) {
+  .main {
+    background-color: #fffbf0;
+  }
+
+  /*****skriftstørrelser i DESK***/
+
+  h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 45px;
+  }
+
+  h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 35px;
+  }
+
+  h3 {
+    font-family: "Playfair Display", serif;
+    font-size: 25px;
+  }
+
+  p {
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 12px;
+  }
+
+  .ctabutton1 {
+    font-family: "Playfair Display", serif;
+    color: #fffbf0;
+    /* size: 18px; */
+  }
+
+  .ctabutton2 {
+    font-family: "Playfair Display", serif;
+    color: #fffbf0;
+    /* size: 18px; */
+  }
+
+  /*****Overskrift DESK ******/
+
+  .h2top {
+    color: #5a1b22;
+    font-size: 35px;
+  }
+
+  /****grid mosaik intro DESK ****/
+
+  .grid_mosaikintro {
+    background-color: #5a1b22;
+  }
+
+  .introh1 {
+    color: #fffbf0;
+    /* font-size: 80px; */
+  }
+
+  .introh2 {
+    color: #fffbf0;
+    /* font-size: 30px; */
+  }
+
+  .introh2a {
+    color: #fffbf0;
+    /* font-size: 20px; */
+  }
+
+  .intropa {
+    color: #fffbf0;
+    /* font-size: 15px; */
+  }
+
+  .introh2b {
+    color: #fffbf0;
+    font-size: 20px;
+  }
+
+  .intropb {
+    color: #fffbf0;
+    /* font-size: 15px; */
+  }
+
+  .reolframe {
+    background-color: #d1c362;
+    padding: 10px;
+  }
+
+  /*****3 store linjer DESK****/
+
+  .tekstlinjer {
+    color: #5a1b22;
+    font-size: 35px;
+  }
+
+  .italictekst {
+    font-family: "Playfair Display", serif;
+  }
+
+  /*****instadel DESK ****/
+
+  .instadel {
+    background-color: #d1c362;
+    padding-bottom: 20px;
+  }
+  .instaknap {
+    color: #5a1b22;
+    text-decoration: none;
+  }
+
+  /******** Siden: Projekt Badevaer DESK*****/
+
+  .h1badevaer {
+    /* font-family: "Helvetica Neue", sans-serif; */
+    color: #5a1b22;
+  }
+
+  .galleribadevaer {
+    background-color: #5a1b22;
+  }
+
+  .h2galleri {
+    color: #fffbf0;
+  }
+
+  .frameimg3 {
+    background-color: #d1c362;
+    padding: 10px;
+  }
+
+  .ctabookservice {
+    color: #0a7be4;
+    text-decoration: none;
+  }
+
+  /******SIDEN BOOK DESK*****/
+
+  .h1book {
+    color: #5a1b22;
+  }
+
+  .udfyldbokse {
+    color: #fffbf0;
+    background-color: #5a1b22;
+    font-family: "Helvetica Neue", sans-serif;
+  }
+
+  .h3udfylder {
+    font-family: "Playfair Display", serif;
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,206 @@
+/****MOBILSITE*****/
+@media (max-width: 754px) {
+  /****Udfyld delen MOBIL****/
+
+  .udfyldbokse {
+    margin-top: 55px;
+    padding-bottom: 22px;
+    padding-top: 30px;
+    display: grid;
+    padding-inline: 20px;
+    margin-bottom: 50px;
+  }
+
+  .formrow {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 18px;
+  }
+
+  .formrow input,
+  .formrow textarea {
+    width: 100%;
+    padding: 12px;
+  }
+
+  .h1book {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-block: 30px;
+  }
+  .topinfologo {
+    display: block;
+    margin: 0 auto;
+    width: 75%;
+    padding-bottom: 50px;
+  }
+
+  .bookimg1 {
+    width: 60%;
+    padding-left: 30px;
+    padding-bottom: 40px;
+  }
+
+  .bookimg2 {
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 20px;
+  }
+
+  .udfyldbokse {
+    padding-bottom: 100px;
+  }
+  .sendlogo {
+    padding-bottom: 20px;
+  }
+
+  .sendlogo {
+    background: transparent;
+    border: none;
+    padding: 0;
+    width: 30%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+  }
+}
+
+/******DESKTOP*****/
+@media (min-width: 755px) {
+  .h1book {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-block: 30px;
+  }
+  .topinfologo {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    padding-bottom: 50px;
+    z-index: 99999;
+  }
+
+  .bookimg1 {
+    width: 30%;
+    padding-left: 30px;
+    padding-bottom: 40px;
+  }
+
+  .bookimg2 {
+    width: 25%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 20px;
+  }
+
+  .udfyldbokse {
+    margin-top: 55px;
+    padding-bottom: 22px;
+    padding-top: 30px;
+    display: grid;
+    padding-inline: 20px;
+  }
+
+  .formrow {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 18px;
+  }
+
+  .formrow input,
+  .formrow textarea {
+    width: 100%;
+    padding: 12px;
+  }
+
+  .udfyldbokse {
+    padding-bottom: 100px;
+  }
+
+  .navnkasse {
+    width: 595px;
+  }
+  .sendlogo {
+    padding-bottom: 20px;
+  }
+
+  .sendlogo {
+    background: transparent;
+    border: none;
+    padding: 0;
+    width: 20%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+  }
+}
+
+/* =========================
+   WAVE SCROLL TEXT
+========================= */
+
+main {
+  position: relative;
+}
+
+.snake-wrapper {
+  position: absolute;
+  top: 50px; /* JUSTER visuelt */
+  left: 0;
+  width: 100%;
+  height: 300px;
+
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.snake-svg {
+  width: 1200px;
+  height: 300px;
+
+  animation: snakeMove 22s linear infinite;
+}
+
+.snake-text {
+  font-family: "Playfair Display", serif;
+  font-size: 46px;
+  letter-spacing: 6px;
+  fill: #0a7be4;
+}
+
+.topinfologo {
+  position: relative;
+  z-index: 5;
+}
+
+@keyframes snakeMove {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+.snake-track {
+  display: flex;
+  width: max-content;
+
+  animation: snakeMove 25s linear infinite;
+}
+
+@keyframes snakeMove {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}

@@ -1,0 +1,232 @@
+/****MOBILSITE*****/
+@media (max-width: 754px) {
+  .h1badevaer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-block: 30px;
+  }
+
+  .topinfologo {
+    display: block;
+    margin: 0 auto;
+    width: 75%;
+    padding-bottom: 30px;
+  }
+
+  .h2galleri {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-block: 30px;
+  }
+
+  .galleribadevaer {
+    margin-top: 55px;
+    /* padding-bottom: 22px; */
+    padding-top: 30px;
+    display: grid;
+  }
+
+  .imgbadevaer1 {
+    width: 60%;
+    display: block;
+    margin-left: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .imgbadevaer2 {
+    padding-top: 55px;
+    width: 60%;
+    padding-bottom: 40px;
+  }
+
+  .frameimg3 {
+    background-color: #d1c362;
+    padding: 20px;
+
+    width: 60%;
+    margin-inline: auto;
+  }
+
+  .imgbadevaer3 {
+    width: 100%;
+    display: block;
+  }
+
+  .imgbadevaer4 {
+    width: 60%;
+    display: block;
+    margin-left: auto;
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .imgbadevaer5 {
+    padding-top: 40px;
+    width: 75%;
+    display: block;
+
+    margin-right: auto;
+    padding-bottom: 50px;
+  }
+
+  /******CTA book service link MOBIL*****/
+  .ctabookservice {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+  }
+}
+
+/******DESKTOP*****/
+@media (min-width: 755px) {
+  /******Øverste del DESK******/
+
+  .h1badevaer {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding-block: 50px;
+  }
+
+  .topinfologo {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    padding-bottom: 60px;
+  }
+
+  /*****galleri sektion DESK*****/
+
+  .h2galleri {
+    padding-block: 30px;
+    padding-left: 20px;
+  }
+
+  .grid_10fr {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    height: 1170px;
+  }
+
+  .imgbadevaer1 {
+    grid-column: 1 / 2;
+    /* grid-row: 1 / 3; */
+    width: 80%;
+    height: auto;
+  }
+
+  .imgbadevaer2 {
+    grid-column: 2 / 3;
+    width: 100%;
+    padding: 20px;
+    height: auto;
+    padding-top: 250px;
+  }
+
+  .frameimg3 {
+    grid-column: 3 / 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 410px;
+  }
+
+  .imgbadevaer3 {
+    grid-column: 3 / 4;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .imgbadevaer4 {
+    grid-column: 1 / 2;
+    width: 75%;
+    height: auto;
+    display: block;
+  }
+
+  .imgbadevaer5 {
+    grid-column: 3 / 4;
+    width: 80%;
+    height: auto;
+  }
+
+  /***** cta knap - book service DESK *****/
+  .ctabookservice {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 75px;
+  }
+}
+
+/* =========================
+   WAVE SCROLL TEXT
+========================= */
+
+main {
+  position: relative;
+}
+
+.snake-wrapper {
+  position: absolute;
+  top: 100px; /* JUSTER visuelt */
+  left: 0;
+  width: 100%;
+  height: 300px;
+
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.snake-svg {
+  width: 1200px;
+  height: 300px;
+
+  animation: snakeMove 22s linear infinite;
+}
+
+.snake-text {
+  font-family: "Playfair Display", serif;
+  font-size: 46px;
+  letter-spacing: 6px;
+  fill: #5a1b22;
+}
+
+.h1badevaer,
+.topinfologo {
+  position: relative;
+  z-index: 5;
+}
+
+@keyframes snakeMove {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+.snake-track {
+  display: flex;
+  width: max-content;
+
+  animation: snakeMove 25s linear infinite;
+}
+
+@keyframes snakeMove {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
